@@ -38,17 +38,17 @@ Assignment Statement
 The aim was to develop a scalable and secure web chatting application with real-time communication features. The features included are following :
 
 1. Authentication:
-================================
+
  Implemented secure user authentication using JWT (JSON Web Tokens) for user sessions. This ensured that only authorized users could access the chat features.
 
 
 2. Real-time Communication: 
-================================
+
 Utilized socket.io to facilitate real-time messaging between users. This allowed messages to be sent and received instantly, creating a seamless chatting experience.
 
 
 3. User-friendly Interface:
-================================
+
  Designed a clean and intuitive user interface using React.js. The interface included features such as one-on-one chat, group chat, searching for users or groups, and notifications for new messages.
 
 
