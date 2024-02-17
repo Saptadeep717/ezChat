@@ -26,3 +26,6 @@ how to chat in this app
 
 
 5. logout to go to the home page
+
+===========================================
+Either you can use it via guest login 
