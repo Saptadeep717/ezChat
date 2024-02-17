@@ -2,7 +2,7 @@ import { Button } from "@chakra-ui/button";
 import { useDisclosure } from "@chakra-ui/hooks";
 import { Input } from "@chakra-ui/input";
 import { Box, Text } from "@chakra-ui/layout";
-import ezChatImage from '../../ezChat.png';
+import ezChatImage from "../../ezChat.png";
 import {
   Menu,
   MenuButton,
@@ -25,7 +25,6 @@ import { useState } from "react";
 import axios from "axios";
 import { useToast } from "@chakra-ui/toast";
 import ChatLoading from "../ChatLoading";
-// import { Spinner } from "@chakra-ui/spinner";
 import ProfileModal from "./ProfileModal";
 import NotificationBadge from "react-notification-badge";
 import { Effect } from "react-notification-badge";
@@ -132,7 +131,6 @@ function SideDrawer() {
         alignItems="center"
         bg="white"
         w="100%"
-        // p="5px 5px 5px 5px"
         borderWidth="5px"
       >
         <Tooltip label="Search Users to chat" hasArrow placement="bottom-end">
@@ -144,7 +142,7 @@ function SideDrawer() {
           </Button>
         </Tooltip>
         <Text fontSize="4xl" fontFamily="Lucida Handwriting">
-        <img src={ezChatImage} width={150} className="bg-none"/>
+          <img src={ezChatImage} width={150} className="bg-none" />
         </Text>
         <div>
           <Menu>

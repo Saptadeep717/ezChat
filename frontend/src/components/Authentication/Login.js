@@ -44,7 +44,7 @@ const Login = () => {
         { email, password }
       );
 
-      // console.log(JSON.stringify(data));
+     
       toast({
         title: "Login Successful",
         status: "success",
@@ -54,7 +54,7 @@ const Login = () => {
       });
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
-      // history.push("/chats");
+      
       window.location.href = "/chats";
     } catch (error) {
       toast({

@@ -5,7 +5,7 @@ import { VStack } from "@chakra-ui/layout";
 import { useToast } from "@chakra-ui/toast";
 import axios from "axios";
 import { useState } from "react";
-import { useHistory } from "react-router";
+import { useHistory } from "react-router-dom";
 
 const Signup = () => {
   const [show, setShow] = useState(false);
@@ -41,6 +41,7 @@ const Signup = () => {
         isClosable: true,
         position: "bottom",
       });
+      setPicLoading(false);
       return;
     }
     console.log(name, email, password, pic);
@@ -97,12 +98,12 @@ const Signup = () => {
       return;
     }
     console.log(pics);
-    if (pics.type === "image/jpeg" || pics.type === "image/png") {
+    if (pics.type === "image/jpeg" || pics.type === "image/png" || pics.type === "image/jpg") {
       const data = new FormData();
       data.append("file", pics);
-      data.append("upload_preset", "Chat_App");
-      data.append("cloud_name", "souvik222");
-      fetch("https://api.cloudinary.com/v1_1/souvik222/image/upload", {
+      data.append("upload_preset", "ezchat");
+      data.append("cloud_name", "saptadeep717");
+      fetch("https://api.cloudinary.com/v1_1/saptadeep717/image/upload", {
         method: "post",
         body: data,
       })
