@@ -9,3 +9,20 @@ CLIENT_URL = "http://localhost:3000"
 
 put all the information in a .env file and install it 
 by npm i dotenv
+
+
+how to chat in this app
+============================
+1. Signup a new user
+
+
+2. the signup another user
+
+
+3. find the user by email or name
+
+
+4. then click on that user and start to chat 
+
+
+5. logout to go to the home page
